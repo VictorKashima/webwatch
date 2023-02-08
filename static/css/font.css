@@ -1,0 +1,35 @@
+/* DSEG 7 Regular */
+@font-face {
+    font-family: 'DSEG7Regular';
+    src: url(../font/DSEG7Classic-Regular.ttf) format('ttf'),
+         url(../font/DSEG7Classic-Regular.woff) format('woff'),
+         url(../font/DSEG7Classic-Regular.woff2) format('woff2');
+    font-weight: normal;
+}
+
+/* DSEG 7 Bold */
+@font-face {
+    font-family: 'DSEG7Bold';
+    src: url(../font/DSEG7Classic-Bold.ttf) format('ttf'),
+         url(../font/DSEG7Classic-Bold.woff) format('woff'),
+         url(../font/DSEG7Classic-Bold.woff2) format('woff2');
+    font-weight: bold;
+}
+
+/* DSEG 14 Regular */
+@font-face {
+    font-family: 'DSEG14Regular';
+    src: url(../font/DSEG14Classic-Regular.ttf) format('ttf'),
+         url(../font/DSEG14Classic-Regular.woff) format('woff'),
+         url(../font/DSEG14Classic-Regular.woff2) format('woff2');
+    font-weight: normal;
+}
+
+/* DSEG 14 Bold */
+@font-face {
+    font-family: 'DSEG14Bold';
+    src: url(../font/DSEG14Classic-Bold.ttf) format('ttf'),
+         url(../font/DSEG14Classic-Bold.woff) format('woff'),
+         url(../font/DSEG14Classic-Bold.woff2) format('woff2');
+    font-weight: bold;
+}
