@@ -46,7 +46,7 @@ setInterval(function() {
 })
 
 function playMusic() {
-    let audio = new Audio("/static/sound/clock.mp3");
+    let audio = new Audio("clock.mp3");
     audio.loop = true;
     audio.play();   
 }
