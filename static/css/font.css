@@ -1,6 +1,6 @@
 /* DSEG 7 Regular */
 @font-face {
-    font-family: 'DSEG7Regular';
+    font-family: 'DSEG7';
     src: url(../font/DSEG7Classic-Regular.ttf) format('ttf'),
          url(../font/DSEG7Classic-Regular.woff) format('woff'),
          url(../font/DSEG7Classic-Regular.woff2) format('woff2');
@@ -9,7 +9,7 @@
 
 /* DSEG 7 Bold */
 @font-face {
-    font-family: 'DSEG7Bold';
+    font-family: 'DSEG7';
     src: url(../font/DSEG7Classic-Bold.ttf) format('ttf'),
          url(../font/DSEG7Classic-Bold.woff) format('woff'),
          url(../font/DSEG7Classic-Bold.woff2) format('woff2');
@@ -18,18 +18,18 @@
 
 /* DSEG 14 Regular */
 @font-face {
-    font-family: 'DSEG14Regular';
+    font-family: 'DSEG14';
     src: url(../font/DSEG14Classic-Regular.ttf) format('ttf'),
          url(../font/DSEG14Classic-Regular.woff) format('woff'),
          url(../font/DSEG14Classic-Regular.woff2) format('woff2');
-    font-weight: normal;
+    font-weight: 100;
 }
 
 /* DSEG 14 Bold */
 @font-face {
-    font-family: 'DSEG14Bold';
+    font-family: 'DSEG14';
     src: url(../font/DSEG14Classic-Bold.ttf) format('ttf'),
          url(../font/DSEG14Classic-Bold.woff) format('woff'),
          url(../font/DSEG14Classic-Bold.woff2) format('woff2');
-    font-weight: bold;
+    font-weight: 700;
 }

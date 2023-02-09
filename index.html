@@ -11,14 +11,32 @@
 <body>
     <div class="watch">
         <div class="display">
+            <div class="date">
+                <!-- <span id="utc">00</span> -->
+                <span id="year">0000</span>/
+                <span id="month">00</span>/
+                <span id="day">00</span>
+            </div>
             <div class="number">
                 <span id="hour">00</span>:
                 <span id="minute">00</span>:
                 <span id="second">00</span>
             </div>
+            <div class="weekday">
+                <span class="dayWeek">SUN</span>
+                <span class="dayWeek">MON</span>
+                <span class="dayWeek">TUE</span>
+                <span class="dayWeek">WED</span>
+                <span class="dayWeek">THU</span>
+                <span class="dayWeek">FRI</span>
+                <span class="dayWeek">SAT</span>
+            </div>
         </div>
     </div>
 
+    <button id="play"></button>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="static/js/script.js"></script>
 </body>
 
