@@ -41,15 +41,15 @@ body {
 
 .watch {
     padding: .5rem;
-    background: #333;
+    background: linear-gradient(120deg, #333, #444, #333);
     box-shadow: 0px 0px 20px #0009;
     text-align: center;
 }
 
 .display {
     background: #000;
-    color: #0C0;
-    padding: 1.5rem;
+    color: #0B0;
+    padding: 1.5rem 2.5rem;
     display: flex;
     flex-direction: column;
     gap: .5rem;
@@ -62,7 +62,12 @@ body {
 
 .number {
     font-family: 'DSEG7';
-    font-size: 3.3rem;
+    font-size: 3.5rem;
+}
+
+.numberBackground {
+    position: absolute;
+    opacity: .1;
 }
 
 .nowDayWeek {
