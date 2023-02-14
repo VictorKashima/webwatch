@@ -3,7 +3,7 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: content-box;
+    box-sizing: border-box;
 }
 
 html {
@@ -39,14 +39,55 @@ body {
 
 }
 
-.watch {
-    padding: .5rem;
-    background: linear-gradient(120deg, #333, #444, #333);
-    box-shadow: 0px 0px 20px #0009;
-    text-align: center;
+.weather {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    transform: rotateZ(10deg);
 }
 
-.display {
+.sun {
+    position: absolute;
+    bottom: -100vh;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    transform: rotateZ(100deg);
+    box-shadow:
+        inset 0 0 50px #FFF,
+        inset 20px 0 80px rgb(255, 0, 0),
+        inset -20px 0 80px rgb(255, 217, 0),
+        inset 20px 0 300px rgb(255, 0, 0),
+        inset -20px 0 300px rgb(255, 217, 0),
+        0 0 50px #FFF9,
+        -10px 0 80px rgb(255, 0, 0),
+        10px 0 80px rgb(255, 217, 0);
+}
+
+.moon {
+    position: absolute;
+    top: 0;
+    width: 10vw;
+    height: 10vw;
+    border-radius: 50%;
+    box-shadow:
+        inset 0 0 50px #FFF,
+        inset 20px 0 80px rgb(200, 200, 150),
+        inset -20px 0 80px rgb(100, 100, 150),
+        inset 20px 0 300px rgb(200, 200, 150),
+        inset -20px 0 300px rgb(100, 100, 150),
+        0 0 50px #FFF9,
+        -10px 0 80px rgb(100, 100, 150),
+        10px 0 80px rgb(200, 200, 150);
+}
+
+.watch {
+    border: .5rem solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(120deg, #222, #555, #333);
+    box-shadow: 0px 0px 20px #0009;
     background: #000;
     color: #0B0;
     padding: 1.5rem 2.5rem;
