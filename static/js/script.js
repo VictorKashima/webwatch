@@ -6,8 +6,8 @@ const year = document.getElementById("year");
 const month = document.getElementById("month");
 const day = document.getElementById("day");
 const play = document.getElementById("play");
+const weather = document.querySelector('.weather');
 var dayWeek = $(".dayWeek");
-
 
 setInterval(function() {
 
@@ -42,6 +42,8 @@ setInterval(function() {
     hour.textContent = nowHour;
     minute.textContent = nowMinute;
     second.textContent = nowSecond;
+
+    weather.style.transform = `rotateZ(${ nowHour * 15 }deg)`;
 
 })
 
