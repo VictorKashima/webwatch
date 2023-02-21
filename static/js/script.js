@@ -9,6 +9,8 @@ const play = document.getElementById("play");
 const weather = document.querySelector('.weather');
 var dayWeek = $(".dayWeek");
 
+const body = document.getElementById("body");
+
 setInterval(function() {
 
     let dateToday = new Date();
@@ -43,7 +45,13 @@ setInterval(function() {
     minute.textContent = nowMinute;
     second.textContent = nowSecond;
 
-    weather.style.transform = `rotateZ(${ nowHour * 15 }deg)`;
+    weather.style.transform = `rotateZ(${ (nowHour * 15) + (nowMinute / 4) }deg)`;
+
+    if (nowHour >= 06 && nowHour <= 18) {
+        body.style.backgroundImage = "var(--skyDay)";
+    } else {
+        body.style.backgroundImage = "var(--skyNight)";
+    }
 
 })
 
@@ -52,5 +60,3 @@ function playMusic() {
     audio.loop = true;
     audio.play();   
 }
-
-play.addEventListener("click", playMusic);

@@ -1,5 +1,10 @@
 @import url(font.css);
 
+:root {
+    --skyDay: linear-gradient(150deg, #E0FFFF, #87CEFA, #6495ED);
+    --skyNight: linear-gradient(150deg, #201c2f, #113755, #100751);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -18,7 +23,6 @@ body {
     gap: 2rem;
     justify-content: center;
     align-items: center;
-    background-image: linear-gradient(150deg, #E0FFFF, #87CEFA, #6495ED);
     background-size: 300% 300%;
     animation: sky 10s ease-in-out infinite;
 }
