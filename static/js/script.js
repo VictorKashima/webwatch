@@ -45,7 +45,7 @@ setInterval(function() {
     minute.textContent = nowMinute;
     second.textContent = nowSecond;
 
-    weather.style.transform = `rotateZ(${ (nowHour * 15) + (nowMinute / 4) }deg)`;
+    weather.style.transform = `rotateZ(${ (nowHour * 15) + (nowMinute * 0.25) }deg)`;
 
     if (nowHour >= 06 && nowHour <= 18) {
         body.style.backgroundImage = "var(--skyDay)";
